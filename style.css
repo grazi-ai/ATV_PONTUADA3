@@ -1,0 +1,164 @@
+body {
+    padding: 0%;
+    margin: 0;
+    color: #FFFFFF;
+    background-color: #8B0000;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-weight: 400;
+}
+
+
+body h2 {
+    color: rgb(233, 223, 223);
+    text-shadow: 2px 3px 5px rgba(69, 25, 25, 0.9);
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 50px 0 20px 0;
+    font-weight: 900;
+    font-size: 4.5rem;
+    font-family: fantasy;
+}
+
+.header {
+    background-color: white;
+    margin: 0;
+    margin-bottom: 0px;
+    padding: 10px;
+    font-weight: 900;
+    font-size: 3.0rem;
+}
+
+.container {
+    /*parte de fora das informacoes*/
+    text-align: left;
+    width: 90%;
+    min-width: 1000px;
+    margin: auto;
+    padding: 30px 40px 30px 40px;
+}
+
+.titulo-fechado {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.card {
+    transition:
+        background-color 1s ease,
+        color 1.5s ease,
+        font-size 0.7s ease,
+        height 0.4s ease,
+        width 0.2s ease,
+        padding 1s ease,
+        margin-left 1s ease,
+        opacity 3.5s ease,
+        border-radius 0.7s ease;
+}
+
+.card-serie {
+    color: rgb(19, 4, 4);
+    align-items: center;
+    min-height: 10px;
+    width: 90%;
+    min-width: 300px;
+    height: 2em;
+    margin: auto;
+    margin-bottom: 25px;
+    /*distancia dos cards*/
+    padding-top: 20px;
+    padding-left: 30px;
+    border: 3px solid rgb(61, 13, 13);
+    border-radius: 2.1em;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.9rem;
+    background-color: rgb(169, 100, 100);
+    box-shadow: 0 5px 5px 1px rgb(0, 0, 0, 0.5);
+}
+
+.card-serie-select {
+    height: 500px; /*tamanho da caixa*/
+    width: 95%;
+    color: whitesmoke;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.7);
+    background-color: rgb(161, 60, 60);
+    margin: auto;
+    margin-bottom: 25px;
+    padding: 20px;
+    font-size: 2.0rem;
+    box-shadow: 0 0 15px 3px rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+}
+
+
+.card-serie:hover {
+    border: 4px solid black;
+    color: black;
+}
+
+
+.conteudo {
+    color: #E0E0E0;
+    font-size: 1.1rem;
+    transition: opacity 1.5s ease;
+}
+
+.escondido {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.visivel {
+    opacity: 1;
+    visibility: visible;
+}
+
+.parte-fig-texto {
+    display: flex;
+    align-items: center;
+    margin-top: 27px;
+    /*distancia da img e do texto ate o titulo*/
+}
+
+.container-fig {
+    width: 290px;
+    /*distancia entre a ft e o texto */
+}
+
+.container-fig img {
+    width: auto;
+    max-width: 1000px;
+    height: 320px;
+    margin: auto;
+    display: flex;
+    border: 3px solid #561f1f;
+    border-radius: 5px;
+    box-shadow: 0 4px 4px rgba(38, 9, 9, 0.694);
+
+    transition: img 0.2s ease, 
+    box-shadow 0.2s ease;
+    cursor: zoom-in;
+}
+
+/* imagem ampliada */
+.container-fig img.zoom-ativo {
+    transform: scale(2.5);
+    transform-origin: center center;
+    z-index: 200;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.container-info {
+    height: 100%;
+    margin-left: 60px;
+    width: 100%;
+    align-items: center;
+}
+
+.descricao {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-align: justify;
+}
